@@ -449,6 +449,46 @@
   .mention-badge.fail { background: rgba(239,68,68,0.1); color: #f87171; border-color: rgba(239,68,68,0.25); }
   .mention-badge.none { background: var(--surface); color: var(--text3); border-color: var(--border); }
 
+  /* ORIENTATION CTA */
+  .orientation-cta-wrap { margin-bottom: 2rem; }
+  .orientation-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 26px;
+    font-size: 14.5px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(108,99,255,0.35);
+    text-decoration: none;
+  }
+  .orientation-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(108,99,255,0.45);
+  }
+  .orientation-cta:disabled,
+  .orientation-cta.disabled {
+    background: var(--surface);
+    color: var(--text3);
+    cursor: not-allowed;
+    box-shadow: none;
+    border: 1px solid var(--border);
+  }
+  .orientation-cta .arrow { font-size: 1.1rem; transition: transform var(--transition); }
+  .orientation-cta:not(.disabled):hover .arrow { transform: translateX(3px); }
+  .orientation-cta-hint {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--text3);
+  }
+
   /* PROGRESS BAR */
   .progress-section { margin-bottom: 2rem; }
   .progress-section h3 {
@@ -607,6 +647,7 @@
 
   <div class="results-grid" id="resultsGrid"></div>
   <div class="mention-wrap" id="mentionWrap"></div>
+  <div class="orientation-cta-wrap" id="orientationCtaWrap"></div>
   <div class="progress-section" id="progressSection"></div>
   <div class="formula-box" id="formulaBox"></div>
 
@@ -799,6 +840,7 @@ let currentSection = 'math';
 let currentSession = 'principale';
 let grades = {};
 let exempt = { sport: false };
+let lastComputed = null; // holds the data package sent to orientation.html
 
 function setSection(key) {
   currentSection = key;
@@ -996,6 +1038,33 @@ function compute() {
 
   const score7 = scoreFG !== null ? Math.round(scoreFG * 1.07 * 100) / 100 : null;
 
+  // Build the data package that will be handed off to orientation.html
+  const notesPayload = {};
+  sec.subjects.forEach(subj => {
+    const isExempt = subj.exemptable && exempt[subj.id];
+    notesPayload[subj.id] = {
+      name: subj.name,
+      coef: subj.coef,
+      main: !!subj.main,
+      exempt: !!isExempt,
+      noteSession1: grades[subj.id] !== undefined ? grades[subj.id] : null,
+      noteSession2: grades[subj.id + '_ctrl'] !== undefined ? grades[subj.id + '_ctrl'] : null,
+      noteFinale: isExempt ? null : (getEffectiveGrade(subj.id) !== undefined ? getEffectiveGrade(subj.id) : null)
+    };
+  });
+
+  lastComputed = {
+    section: currentSection,
+    sectionLabel: sec.label,
+    session: currentSession,
+    moyenne: moyenne !== null ? Math.round(moyenne * 100) / 100 : null,
+    scoreFG: scoreFG,
+    score7: score7,
+    notes: notesPayload,
+    filledCount: filledCount,
+    totalSubjects: sec.subjects.length - (exempt.sport ? 1 : 0)
+  };
+
   renderResults(moyenne, scoreFG, score7, bars, filledCount, sec.subjects.length - (exempt.sport ? 1 : 0));
 }
 
@@ -1015,6 +1084,13 @@ function getBarColor(val) {
   if (val >= 10) return '#3b82f6';
   if (val >= 7) return '#f59e0b';
   return '#ef4444';
+}
+
+function goToOrientation() {
+  if (!lastComputed || lastComputed.scoreFG === null) return;
+  const json = JSON.stringify(lastComputed);
+  const encoded = encodeURIComponent(json);
+  window.location.href = `orientation.html?data=${encoded}`;
 }
 
 function renderResults(moyenne, scoreFG, score7, bars, filled, total) {
@@ -1078,6 +1154,25 @@ function renderResults(moyenne, scoreFG, score7, bars, filled, total) {
     Les points au-dessus de 10 génèrent un bonus.<br>
     <strong>Bonus 7% :</strong> Accordé aux candidats des régions de développement prioritaires selon le décret ministériel.
   `;
+
+  // Orientation CTA — enabled only once all subjects are filled in and a score exists
+  const cta = document.getElementById('orientationCtaWrap');
+  const allFilled = filled === total && scoreFG !== null;
+  if (allFilled) {
+    cta.innerHTML = `
+      <button class="orientation-cta" onclick="goToOrientation()">
+        🎓 Voir les spécialités disponibles <span class="arrow">→</span>
+      </button>
+      <span class="orientation-cta-hint">Basé sur votre score FG (${scoreFG.toFixed(2)}) et votre section</span>
+    `;
+  } else {
+    cta.innerHTML = `
+      <button class="orientation-cta disabled" disabled>
+        🎓 Voir les spécialités disponibles <span class="arrow">→</span>
+      </button>
+      <span class="orientation-cta-hint">Saisissez toutes vos notes (${filled}/${total}) pour débloquer cette étape</span>
+    `;
+  }
 }
 
 // INIT
