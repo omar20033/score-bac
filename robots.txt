@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://scorebac.com/sitemap.xml
+
+# Block nothing important (SEO site)
+Disallow:
+
+# Optional safety (only if you later add folders you don't want indexed)
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
