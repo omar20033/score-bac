@@ -9,19 +9,19 @@
 
   <!-- Maths -->
   <url>
-    <loc>https://scorebac.com/calculer-moyenne-bac-maths/</loc>
+    <loc>https://scorebac.com/calculer-moyenne-bac-math/</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- Sciences Expérimentales -->
   <url>
-    <loc>https://scorebac.com/calculer-moyenne-bac-sciences-experimentales/</loc>
+    <loc>https://scorebac.com/calculer-moyenne-bac-science/</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- Informatique -->
   <url>
-    <loc>https://scorebac.com/calculer-moyenne-bac-informatique/</loc>
+    <loc>https://scorebac.com/calculer-moyenne-bac-info/</loc>
     <priority>0.9</priority>
   </url>
 
