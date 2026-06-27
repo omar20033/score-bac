@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moyennes Minimales BAC Algérie 2025 2024 2023 | معدلات القبول الجامعي</title>
+<meta name="description" content="Téléchargez les moyennes minimales du BAC Algérie 2025, 2024 et 2023. Moyennes d'acceptation universitaire par filière et par établissement. معدلات القبول في الجامعات الجزائرية.">
+<meta name="keywords" content="moyennes minimales bac algerie, معدلات القبول, معدلات القبول الجامعي الجزائر, moyennes minimales 2025, moyennes minimales 2024, moyennes minimales 2023, min1 min2 min3, orientation universitaire algerie, معدل القبول بكالوريا">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d1a;
+    --bg2: #13132a;
+    --bg3: #1a1a35;
+    --surface: #1e1e3f;
+    --surface2: #252550;
+    --border: rgba(120,120,220,0.18);
+    --border2: rgba(120,120,220,0.32);
+    --text: #f0f0ff;
+    --text2: #a0a0cc;
+    --text3: #6060aa;
+    --accent: #6c63ff;
+    --accent2: #8b83ff;
+    --accent-glow: rgba(108,99,255,0.25);
+    --green: #22c55e;
+    --green-bg: rgba(34,197,94,0.12);
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --radius: 12px;
+    --radius-lg: 18px;
+    --transition: 0.2s ease;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 3.5rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(108,99,255,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.4);
+    color: var(--accent2);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 span { color: var(--accent2); }
+  .hero p {
+    font-size: 1.05rem;
+    color: var(--text2);
+    max-width: 580px;
+    margin: 0 auto 0.5rem;
+  }
+  .hero .ar {
+    direction: rtl;
+    font-size: 1rem;
+    color: var(--text3);
+    margin-top: 0.5rem;
+  }
+
+  /* LAYOUT */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* EXPLAINER */
+  .explainer {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .explainer h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .explainer p {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+  .explainer p:last-child { margin-bottom: 0; }
+
+  /* MIN PILLS LEGEND */
+  .min-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1.25rem;
+  }
+  .min-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: var(--text2);
+  }
+  .min-pill .tag {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-glow);
+    color: var(--accent2);
+    border: 1px solid rgba(108,99,255,0.3);
+  }
+
+  /* YEAR CARDS */
+  .years-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 3rem;
+  }
+
+  .year-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color var(--transition);
+  }
+  .year-card:hover { border-color: var(--border2); }
+  .year-card.featured {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(108,99,255,0.15), 0 8px 32px rgba(108,99,255,0.1);
+  }
+
+  .year-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .year-left { display: flex; align-items: center; gap: 14px; }
+  .year-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent2);
+    line-height: 1;
+  }
+  .year-card.featured .year-num { color: #fff; }
+  .year-meta { display: flex; flex-direction: column; gap: 2px; }
+  .year-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .year-sub {
+    font-size: 12px;
+    color: var(--text3);
+  }
+  .year-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: var(--accent-glow);
+    color: var(--accent2);
+    border: 1px solid rgba(108,99,255,0.35);
+    white-space: nowrap;
+  }
+
+  .year-body {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .year-desc {
+    flex: 1;
+    min-width: 200px;
+  }
+  .year-desc p {
+    font-size: 13.5px;
+    color: var(--text2);
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+  }
+  .year-desc p:last-child { margin-bottom: 0; }
+  .year-desc .ar-note {
+    direction: rtl;
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 0.5rem;
+  }
+
+  .year-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-download:hover { background: var(--accent2); transform: translateY(-1px); }
+  .btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface2);
+    color: var(--text2);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+  }
+  .btn-view:hover { border-color: var(--border2); color: var(--text); }
+
+  .year-stats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+  }
+  .stat-chip {
+    font-size: 12px;
+    color: var(--text3);
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+  }
+  .stat-chip strong { color: var(--text2); }
+
+  /* HOW TO USE */
+  .howto-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .howto-card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+  }
+  .steps { display: flex; flex-direction: column; gap: 14px; }
+  .step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.35);
+    color: var(--accent2);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .step-text {
+    font-size: 13.5px;
+    color: var(--text2);
+    line-height: 1.65;
+    padding-top: 4px;
+  }
+  .step-text strong { color: var(--text); }
+
+  /* CTA BACK */
+  .cta-box {
+    background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(108,99,255,0.05));
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .cta-box h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .cta-box p {
+    font-size: 13.5px;
+    color: var(--text2);
+    margin-bottom: 1.25rem;
+  }
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  .btn-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+  /* FAQ */
+  .faq-section {
+    border-top: 1px solid var(--border);
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .faq-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+  }
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  .faq-q {
+    padding: 0.9rem 1.25rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    transition: background var(--transition);
+    user-select: none;
+    list-style: none;
+  }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q:hover { background: var(--surface2); }
+  .faq-q::after { content: '+'; color: var(--accent2); font-size: 1.2rem; flex-shrink: 0; }
+  details[open] > .faq-q::after { content: '−'; }
+  .faq-a {
+    padding: 0.9rem 1.25rem 1rem;
+    font-size: 13.5px;
+    color: var(--text2);
+    line-height: 1.75;
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+  }
+  .faq-a strong { color: var(--accent2); }
+  .faq-a.ar { direction: rtl; text-align: right; }
+
+  /* SEO KEYWORDS */
+  .seo-keywords-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .seo-kw-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 0.6rem;
+    direction: rtl;
+  }
+  .seo-kw-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.8;
+  }
+  .seo-kw-links span {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .year-body { flex-direction: column; }
+    .year-actions { flex-direction: row; flex-wrap: wrap; }
+    .min-legend { flex-direction: column; }
+    .year-header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">✦ MESRS · Algérie · 2023–2025</div>
+  <h1>Moyennes Minimales <span>BAC Algérie</span></h1>
+  <p>Consultez et téléchargez les guides officiels d'affectation universitaire des trois dernières années.</p>
+  <p class="ar">معدلات القبول الجامعي — دليل توجيه الطلبة الجدد حسب الشعبة والمؤسسة</p>
+</div>
+
+<div class="container">
+
+  <!-- EXPLAINER -->
+  <p class="section-label">C'est quoi les moyennes minimales ?</p>
+  <div class="explainer">
+    <h2>Comprendre le guide d'orientation — فهم معدلات القبول</h2>
+    <p>
+      Chaque année, après le traitement des fiches de vœux de tous les bacheliers algériens, le Ministère de l'Enseignement Supérieur publie un document officiel qui liste, pour chaque filière dans chaque université, la <strong>moyenne la plus basse acceptée</strong> lors de l'affectation.
+    </p>
+    <p>
+      Ce document — appelé <em>Moyennes Minimales</em> ou <strong>معدلات القبول</strong> — est votre boussole pour savoir si votre moyenne vous permet d'accéder à une filière donnée, dans quel établissement, et à quel rang de priorité.
+    </p>
+    <p>
+      Les trois colonnes Min1, Min2 et Min3 correspondent aux trois niveaux de priorité du système d'affectation :
+    </p>
+    <div class="min-legend">
+      <div class="min-pill">
+        <span class="tag">Min1</span>
+        Moyenne minimale des étudiants admis en <strong>priorité 1</strong> — seuil le plus bas, recommandé si c'est votre 1er vœu
+      </div>
+      <div class="min-pill">
+        <span class="tag">Min2</span>
+        Priorité 2 — seuil plus élevé, pour les étudiants qui l'ont mis en 2ème choix
+      </div>
+      <div class="min-pill">
+        <span class="tag">Min3</span>
+        Priorité 3 — seuil encore plus élevé, pour les 3ème choix
+      </div>
+    </div>
+    <p style="margin-top:1rem; font-size:13px; color:var(--text3);">
+      💡 Conseil clé : pour maximiser vos chances, mettez toujours la filière qui vous intéresse le plus en <strong style="color:var(--accent2)">1er vœu</strong> — c'est là que le seuil (Min1) est le plus bas.
+    </p>
+  </div>
+
+  <!-- YEAR CARDS -->
+  <p class="section-label">Guides disponibles — الدلائل المتاحة</p>
+  <div class="years-stack">
+
+    <!-- 2025 — FEATURED -->
+    <div class="year-card featured">
+      <div class="year-header">
+        <div class="year-left">
+          <div class="year-num">2025</div>
+          <div class="year-meta">
+            <div class="year-title">Moyennes Minimales BAC 2025</div>
+            <div class="year-sub">Affectation des nouveaux bacheliers · Session 2025–2026</div>
+          </div>
+        </div>
+        <span class="year-badge">✦ Dernière édition</span>
+      </div>
+      <div class="year-body">
+        <div class="year-desc">
+          <p>
+            Le guide le plus récent, publié par l'ESI en août 2025 suite à la première phase d'affectation. Il couvre l'ensemble des universités, grandes écoles et établissements spécialisés d'Algérie.
+          </p>
+          <p>
+            Inclut le recrutement national pour Médecine (Min1 = <strong style="color:var(--accent2)">16,65</strong>), Pharmacie et Médecine Dentaire. Les filières non saturées sont marquées <em>NC</em>, les priorités sans affectation sont marquées <em>--</em>.
+          </p>
+          <p class="ar-note">دليل معدلات القبول 2025 — أحدث إصدار رسمي لتوجيه بكالوريا 2025</p>
+          <div class="year-stats">
+            <span class="stat-chip"><strong>274</strong> pages</span>
+            <span class="stat-chip"><strong>Août 2025</strong></span>
+            <span class="stat-chip">Toutes wilayas</span>
+            <span class="stat-chip">Source : MESRS / ESI</span>
+          </div>
+        </div>
+        <div class="year-actions">
+          <a href="https://drive.google.com/file/d/1XAt9M2pWyhDfQ0EP2lpQmmc4qsh2Pxfj/view?usp=drive_link" target="_blank" rel="noopener" class="btn-download">
+            ↓ Télécharger PDF
+          </a>
+          <a href="https://drive.google.com/file/d/1XAt9M2pWyhDfQ0EP2lpQmmc4qsh2Pxfj/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view">
+            ↗ Ouvrir en ligne
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="year-card">
+      <div class="year-header">
+        <div class="year-left">
+          <div class="year-num">2024</div>
+          <div class="year-meta">
+            <div class="year-title">Moyennes Minimales BAC 2024</div>
+            <div class="year-sub">Affectation des nouveaux bacheliers · Session 2024–2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="year-body">
+        <div class="year-desc">
+          <p>
+            Le guide 2024 intègre une nouveauté importante : l'égalisation des priorités entre les filières <strong>Mathématiques</strong> et <strong>Sciences Expérimentales</strong> pour l'accès aux études de médecine — un changement qui a modifié les seuils par rapport aux années précédentes.
+          </p>
+          <p>
+            Utile pour comparer l'évolution des seuils d'une année à l'autre et estimer les tendances pour 2026.
+          </p>
+          <p class="ar-note">معدلات القبول 2024 — مفيد لمقارنة التطور ومعرفة اتجاهات القبول</p>
+          <div class="year-stats">
+            <span class="stat-chip"><strong>Août 2024</strong></span>
+            <span class="stat-chip">Toutes wilayas</span>
+            <span class="stat-chip">Source : MESRS</span>
+          </div>
+        </div>
+        <div class="year-actions">
+          <a href="https://drive.google.com/file/d/1VmPyNV8zY8Zp3A4Szvrlxf4_J0iaIgrH/view?usp=drive_link" target="_blank" rel="noopener" class="btn-download">
+            ↓ Télécharger PDF
+          </a>
+          <a href="https://drive.google.com/file/d/1VmPyNV8zY8Zp3A4Szvrlxf4_J0iaIgrH/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view">
+            ↗ Ouvrir en ligne
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="year-card">
+      <div class="year-header">
+        <div class="year-left">
+          <div class="year-num">2023</div>
+          <div class="year-meta">
+            <div class="year-title">Moyennes Minimales BAC 2023</div>
+            <div class="year-sub">Affectation des nouveaux bacheliers · Session 2023–2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="year-body">
+        <div class="year-desc">
+          <p>
+            L'édition 2023 sert de référence historique solide. En comparant les trois années disponibles, vous pouvez observer si les seuils d'une filière tendent à monter ou à descendre — un indicateur précieux pour calibrer vos vœux.
+          </p>
+          <p class="ar-note">معدلات القبول 2023 — مرجع تاريخي لمقارنة الاتجاهات على 3 سنوات</p>
+          <div class="year-stats">
+            <span class="stat-chip"><strong>Août 2023</strong></span>
+            <span class="stat-chip">Toutes wilayas</span>
+            <span class="stat-chip">Source : ESI / MESRS</span>
+          </div>
+        </div>
+        <div class="year-actions">
+          <a href="https://drive.google.com/file/d/1HTEMyneQBlA6pY1d3yEQeSaVWvNK0nIf/view?usp=drive_link" target="_blank" rel="noopener" class="btn-download">
+            ↓ Télécharger PDF
+          </a>
+          <a href="https://drive.google.com/file/d/1HTEMyneQBlA6pY1d3yEQeSaVWvNK0nIf/view?usp=drive_link" target="_blank" rel="noopener" class="btn-view">
+            ↗ Ouvrir en ligne
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HOW TO USE -->
+  <p class="section-label">Comment utiliser ce guide</p>
+  <div class="howto-card">
+    <h2>Lire les moyennes minimales — خطوات استخدام الدليل</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Calculez votre moyenne BAC</strong> — utilisez notre calculateur officiel pour obtenir votre moyenne exacte selon votre filière et vos coefficients ONEC.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Téléchargez le guide 2025</strong> — c'est le document le plus récent et le plus représentatif des seuils pour 2026.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Recherchez votre wilaya et filière souhaitée</strong> — le document est organisé par établissement. Utilisez Ctrl+F (ou ⌘F) dans votre PDF pour chercher directement le nom de l'université.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Comparez avec Min1</strong> — si votre moyenne dépasse le Min1 de la filière, mettez-la en <strong>1er vœu</strong>. C'est le seuil le plus bas et votre meilleure chance d'admission.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-text"><strong>Vérifiez sur 3 ans</strong> — comparez 2023, 2024 et 2025 pour voir si le seuil est stable, en hausse, ou en baisse. Cela vous donnera une meilleure estimation pour 2026.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-text"><strong>NC = place disponible</strong> — une mention <em>NC (Non Calculée)</em> signifie que la filière n'était pas saturée : vous avez de fortes chances d'être accepté avec n'importe quelle moyenne.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BACK TO CALCULATOR -->
+  <div class="cta-box">
+    <h2>Vous n'avez pas encore calculé votre moyenne ?</h2>
+    <p>Utilisez notre calculateur avec les coefficients officiels ONEC pour toutes les filières.</p>
+    <a href="/algerie/calcuer-moyenne-bac/" class="btn-cta">
+      ✦ Calculer ma moyenne BAC →
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Questions fréquentes — معدلات القبول الجامعي</h2>
+
+    <details class="faq-item" open>
+      <summary class="faq-q">C'est quoi les moyennes minimales BAC en Algérie ?</summary>
+      <div class="faq-a">
+        Les <strong>moyennes minimales</strong> (ou <strong>معدلات القبول</strong>) sont les seuils officiels publiés par le Ministère de l'Enseignement Supérieur (MESRS) après chaque session BAC. Ils indiquent la moyenne la plus basse d'un bachelier accepté dans chaque filière et chaque université lors de l'opération d'orientation et d'affectation automatique.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Quelle est la différence entre Min1, Min2 et Min3 ?</summary>
+      <div class="faq-a">
+        <strong>Min1</strong> est le seuil d'admission pour les étudiants qui ont mis cette filière en <strong>1er vœu</strong> (priorité 1). C'est le seuil le plus bas.<br><br>
+        <strong>Min2</strong> concerne ceux qui l'ont mise en <strong>2ème vœu</strong> — le seuil est plus élevé car les places restantes après la priorité 1 sont moins nombreuses.<br><br>
+        <strong>Min3</strong> est pour les <strong>3ème vœux</strong> — seuil encore plus élevé. La leçon : <strong>mettez toujours votre filière préférée en 1er vœu</strong>.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Puis-je me fier aux moyennes 2025 pour prédire 2026 ?</summary>
+      <div class="faq-a">
+        Les seuils varient légèrement chaque année selon le nombre de candidats, les capacités d'accueil, et la moyenne nationale de la promotion. En consultant les 3 dernières années (2023, 2024, 2025), vous pouvez observer des tendances : si le seuil monte chaque année, préparez-vous à une compétition accrue. Ces guides restent la <strong>meilleure référence disponible</strong> avant la publication officielle 2026.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Que signifie NC dans le guide ?</summary>
+      <div class="faq-a">
+        <strong>NC</strong> signifie <em>Non Calculée</em> — la filière n'était pas saturée, c'est-à-dire qu'il y avait plus de places disponibles que de candidats. Dans ce cas, pas de seuil minimum : tout bachelier éligible est accepté. C'est une opportunité à ne pas manquer si cette filière vous intéresse.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Que signifie -- (tiret) dans le guide ?</summary>
+      <div class="faq-a">
+        Le signe <strong>--</strong> signifie qu'aucun bachelier n'a été affecté dans cette priorité (aucun étudiant ne l'avait mise en 2ème ou 3ème vœu, par exemple). Ce n'est pas un problème : concentrez-vous sur la colonne Min1 pour votre 1er vœu.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">كم عدد الاختيارات المسموح بها في بطاقة الرغبات ؟</summary>
+      <div class="faq-a ar">
+        يحق للبكالوريين اختيار ما بين <strong>6 و10 تخصصات</strong> مرتبة حسب الأولوية. ينبغي وضع التخصص الأكثر رغبة في المرتبة الأولى دائماً، لأن معدل القبول (Min1) يكون أدنى للمرتبة الأولى مقارنة بالمراتب اللاحقة.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">أين يمكنني إيجاد معدلات القبول حسب الجامعة والولاية ؟</summary>
+      <div class="faq-a ar">
+        جميع الدلائل المتاحة أعلاه مرتبة حسب المؤسسة والولاية. بعد تحميل الملف، استخدم <strong>Ctrl+F</strong> للبحث عن اسم جامعتك أو ولايتك. الوثائق تغطي جميع الجامعات، المدارس العليا، والمعاهد المتخصصة في الجزائر.
+      </div>
+    </details>
+
+  </section>
+
+  <!-- SEO KEYWORDS -->
+  <div class="seo-keywords-box">
+    <p class="seo-kw-title">كلمات البحث الشائعة</p>
+    <div class="seo-kw-links" dir="rtl">
+      <span>معدلات القبول الجامعي الجزائر 2025</span>
+      <span>معدلات القبول بكالوريا 2025</span>
+      <span>معدل القبول في الجامعات الجزائرية</span>
+      <span>دليل توجيه الطلبة الجدد</span>
+      <span>moyennes minimales bac algerie</span>
+      <span>moyennes minimales 2025</span>
+      <span>min1 min2 min3 orientation</span>
+      <span>affectation bac 2025 algérie</span>
+      <span>orientation universitaire algérie 2025</span>
+      <span>معدلات القبول</span>
+      <span>توجيه بكالوريا الجزائر</span>
+      <span>معدل القبول جامعة</span>
+    </div>
+  </div>
+
+  <p style="font-size:12px;color:var(--text3);text-align:center;margin-bottom:1.5rem;">
+    Les documents PDF sont publiés par le Ministère de l'Enseignement Supérieur et de la Recherche Scientifique (MESRS) d'Algérie. ScoreBac les met à disposition à titre informatif uniquement.
+  </p>
+
+</div>
+
+<footer>
+  <p>ScoreBac Algérie — Outil indépendant, non affilié au Ministère de l'Enseignement Supérieur ni à l'ONEC.</p>
+  <p style="margin-top:6px">Sources officielles : <strong>MESRS · ESI · orientation-esi.dz</strong></p>
+</footer>
+
+</body>
+</html>

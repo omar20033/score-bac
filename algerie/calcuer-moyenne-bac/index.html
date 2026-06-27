@@ -170,6 +170,43 @@
     font-family: 'Inter', sans-serif;
     transition: var(--transition);
   }
+
+   /* CTA BACK */
+  .cta-box {
+    background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(108,99,255,0.05));
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .cta-box h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .cta-box p {
+    font-size: 13.5px;
+    color: var(--text2);
+    margin-bottom: 1.25rem;
+  }
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  .btn-cta:hover { background: var(--accent2); transform: translateY(-1px); }
   .session-btn:hover { border-color: var(--border2); color: var(--text); }
   .session-btn.active {
     background: var(--accent-glow);
@@ -552,6 +589,16 @@
   <div class="cross-link-box">
     🇹🇳 Vous êtes en Tunisie ? Utilisez plutôt notre <a href="https://scorebac.com">calculateur ScoreBac Tunisie</a> avec le score FG et le bonus +7%.
   </div>
+
+<!-- CTA TO MOYENNES MINIMALES -->
+<div class="cta-box">
+  <h2>Connaître les seuils d'admission universitaire ?</h2>
+  <p>Consultez les guides officiels <strong>معدلات القبول</strong> des 3 dernières années — 2023, 2024 et 2025.</p>
+  <a href="/algerie/moyennes-minimales-bac/" class="btn-cta">
+    ✦ Voir les moyennes minimales →
+  </a>
+</div>
+
 
   <section class="faq-section">
     <h2>Questions fréquentes — Bac Algérie</h2>
