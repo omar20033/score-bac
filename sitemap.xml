@@ -54,5 +54,9 @@
     <loc>https://scorebac.com/algerie/moyennes-minimales-bac/</loc>
     <priority>0.9</priority>
   </url>
-/algerie/moyennes-minimales-bac/
+  <url>
+    <loc>https://scorebac.com/maroc/calcuer-moyenne-bac"/</loc>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
