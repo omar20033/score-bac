@@ -230,7 +230,42 @@
     box-shadow: 0 0 0 1px var(--accent) inset;
   }
   .section-icon { font-size: 1.6rem; line-height: 1; }
-
+    /* CTA BACK */
+  .cta-box {
+    background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(108,99,255,0.05));
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .cta-box h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .cta-box p {
+    font-size: 13.5px;
+    color: var(--text2);
+    margin-bottom: 1.25rem;
+  }
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  .btn-cta:hover { background: var(--accent2); transform: translateY(-1px); }
   /* SESSION TOGGLE */
   .session-row {
     display: flex;
@@ -614,6 +649,15 @@
   <div class="mention-wrap" id="mentionWrap"></div>
   <div class="progress-section" id="progressSection"></div>
   <div class="formula-box" id="formulaBox"></div>
+
+  <!-- CTA TO ORIENTATION GUIDE -->
+  <div class="cta-box">
+    <h2>Vous avez votre moyenne ? Consultez le guide d'orientation</h2>
+    <p>Téléchargez le guide d'orientation universitaire 2026 et préparez votre liste de choix.</p>
+    <a href="/tunisie/guide-orientation/" class="btn-cta">
+      ✦ Voir le Guide d'Orientation →
+    </a>
+  </div>
 
   <!-- FAQ Section — SEO content -->
   <section class="faq-section" aria-label="Questions fréquentes sur le calcul de la moyenne bac">
