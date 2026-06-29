@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Politique de confidentialité | ScoreBac</title>
+<meta name="description" content="Politique de confidentialité de ScoreBac : comment nous traitons les données, cookies et la publicité sur notre site de calculateurs scolaires.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://scorebac.com/politique-de-confidentialite">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d1a;
+    --bg2: #13132a;
+    --bg3: #1a1a35;
+    --surface: #1e1e3f;
+    --surface2: #252550;
+    --border: rgba(120,120,220,0.18);
+    --border2: rgba(120,120,220,0.32);
+    --text: #f0f0ff;
+    --text2: #a0a0cc;
+    --text3: #6060aa;
+    --accent: #6c63ff;
+    --accent2: #8b83ff;
+    --accent-glow: rgba(108,99,255,0.25);
+    --radius: 12px;
+    --radius-lg: 18px;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(108,99,255,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.4);
+    color: var(--accent2);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .hero p { font-size: 0.95rem; color: var(--text2); }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 13.5px;
+  }
+  .toc strong { color: var(--text); display: block; margin-bottom: 0.6rem; }
+  .toc a { color: var(--text2); text-decoration: none; display: block; padding: 3px 0; }
+  .toc a:hover { color: var(--accent2); }
+
+  section {
+    margin-bottom: 1.75rem;
+  }
+  section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+  }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+  section p {
+    font-size: 14px;
+    color: var(--text2);
+    margin-bottom: 0.7rem;
+  }
+  section ul {
+    font-size: 14px;
+    color: var(--text2);
+    margin: 0.5rem 0 0.7rem 1.25rem;
+  }
+  section li { margin-bottom: 0.4rem; }
+  section strong { color: var(--text); }
+  section a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  section a:hover { text-decoration: underline; }
+
+  .update-note {
+    font-size: 12.5px;
+    color: var(--text3);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--text3); text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--accent2); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">✦ ScoreBac</div>
+  <h1>Politique de confidentialité</h1>
+  <p>Dernière mise à jour : 29 juin 2026</p>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <strong>Sommaire</strong>
+    <a href="#donnees">1. Données que nous collectons</a>
+    <a href="#cookies">2. Cookies et technologies similaires</a>
+    <a href="#publicite">3. Publicité (Google AdSense)</a>
+    <a href="#analytics">4. Outils d'analyse (Google Analytics)</a>
+    <a href="#partage">5. Partage des données</a>
+    <a href="#droits">6. Vos droits</a>
+    <a href="#enfants">7. Données des mineurs</a>
+    <a href="#modifications">8. Modifications de cette politique</a>
+    <a href="#contact-pp">9. Contact</a>
+  </div>
+
+  <section id="donnees">
+    <h2>1. Données que nous collectons</h2>
+    <p>ScoreBac est un site de calculateurs scolaires. <strong>Les notes et informations que vous saisissez dans nos calculateurs (notes, moyennes, série choisie, etc.) sont traitées entièrement dans votre navigateur</strong> et ne sont jamais envoyées à nos serveurs, ni enregistrées, ni partagées avec un tiers. Une fois la page fermée, ces données disparaissent.</p>
+    <p>Nous ne collectons pas directement d'informations personnelles identifiables (nom, email, téléphone) sauf si vous nous contactez volontairement par email via notre page de contact.</p>
+  </section>
+
+  <section id="cookies">
+    <h2>2. Cookies et technologies similaires</h2>
+    <p>Notre site peut utiliser des cookies et technologies similaires pour :</p>
+    <ul>
+      <li>Mesurer l'audience et améliorer l'expérience utilisateur (via Google Analytics) ;</li>
+      <li>Afficher des publicités pertinentes (via Google AdSense, lorsque ce service est activé sur le site).</li>
+    </ul>
+    <p>Vous pouvez configurer votre navigateur pour refuser les cookies. Cela peut affecter certaines fonctionnalités du site, mais nos calculateurs continueront de fonctionner normalement.</p>
+  </section>
+
+  <section id="publicite">
+    <h2>3. Publicité (Google AdSense)</h2>
+    <p>ScoreBac peut afficher des publicités fournies par <strong>Google AdSense</strong>. Google, en tant que fournisseur tiers, utilise des cookies pour diffuser des annonces sur notre site en fonction de vos visites précédentes sur ce site et d'autres sites.</p>
+    <p>Google peut utiliser des cookies publicitaires pour permettre à Google et à ses partenaires de diffuser des annonces basées sur votre visite de ce site et/ou d'autres sites sur Internet. Vous pouvez désactiver la publicité personnalisée en consultant les <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">paramètres de publicité Google</a>, ou via <a href="https://www.aboutads.info/" target="_blank" rel="noopener">www.aboutads.info</a> pour désactiver l'usage des cookies de tiers à des fins de publicité personnalisée.</p>
+  </section>
+
+  <section id="analytics">
+    <h2>4. Outils d'analyse (Google Analytics)</h2>
+    <p>Nous utilisons Google Analytics pour comprendre comment les visiteurs utilisent notre site (pages consultées, durée de visite, provenance approximative). Ces données sont agrégées et anonymisées autant que possible, et ne permettent pas de vous identifier personnellement.</p>
+  </section>
+
+  <section id="partage">
+    <h2>5. Partage des données</h2>
+    <p>Nous ne vendons, ne louons, ni n'échangeons vos données personnelles avec des tiers à des fins commerciales. Les seules données partagées le sont avec nos prestataires techniques (Google Analytics, Google AdSense) dans le cadre normal de fonctionnement de ces services, conformément à leurs propres politiques de confidentialité.</p>
+  </section>
+
+  <section id="droits">
+    <h2>6. Vos droits</h2>
+    <p>Selon votre pays de résidence, vous pouvez disposer de droits d'accès, de rectification, de suppression ou d'opposition concernant vos données personnelles. Pour toute demande, contactez-nous à l'adresse indiquée ci-dessous. Comme nous ne stockons pas vos notes ni vos résultats de calcul, il n'y a généralement aucune donnée personnelle à supprimer de notre côté concernant l'utilisation des calculateurs.</p>
+  </section>
+
+  <section id="enfants">
+    <h2>7. Données des mineurs</h2>
+    <p>Nos calculateurs sont susceptibles d'être utilisés par des élèves mineurs (collège, lycée). Nous ne collectons aucune information personnelle identifiable auprès des utilisateurs, mineurs ou majeurs, dans le cadre de l'utilisation normale des calculateurs.</p>
+  </section>
+
+  <section id="modifications">
+    <h2>8. Modifications de cette politique</h2>
+    <p>Cette politique de confidentialité peut être mise à jour de temps à autre, notamment pour refléter des changements dans nos pratiques ou pour des raisons légales. La date de dernière mise à jour est indiquée en haut de cette page.</p>
+  </section>
+
+  <section id="contact-pp">
+    <h2>9. Contact</h2>
+    <p>Pour toute question relative à cette politique de confidentialité, contactez-nous à : <a href="mailto:kifeh.contact@gmail.com">kifeh.contact@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 ScoreBac — Tous droits réservés</p>
+  <p style="margin-top:10px">
+    <a href="/a-propos">À propos</a> ·
+    <a href="/contact">Contact</a> ·
+    <a href="/politique-de-confidentialite">Politique de confidentialité</a> ·
+    <a href="/conditions-utilisation">Conditions d'utilisation</a>
+  </p>
+</footer>
+
+</body>
+</html>

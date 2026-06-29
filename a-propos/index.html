@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>À propos de ScoreBac | Calculateurs de moyennes scolaires</title>
+<meta name="description" content="ScoreBac est un site indépendant proposant des calculateurs de moyennes pour les examens scolaires (BEPC, BAC) en Côte d'Ivoire, Algérie et ailleurs. Découvrez notre mission et notre fonctionnement.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://scorebac.com/a-propos">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d1a;
+    --bg2: #13132a;
+    --bg3: #1a1a35;
+    --surface: #1e1e3f;
+    --surface2: #252550;
+    --border: rgba(120,120,220,0.18);
+    --border2: rgba(120,120,220,0.32);
+    --text: #f0f0ff;
+    --text2: #a0a0cc;
+    --text3: #6060aa;
+    --accent: #6c63ff;
+    --accent2: #8b83ff;
+    --accent-glow: rgba(108,99,255,0.25);
+    --radius: 12px;
+    --radius-lg: 18px;
+    --transition: 0.2s ease;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 3.5rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(108,99,255,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.4);
+    color: var(--accent2);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.9rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 span { color: var(--accent2); }
+  .hero p {
+    font-size: 1.05rem;
+    color: var(--text2);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+  .card p {
+    font-size: 14.5px;
+    color: var(--text2);
+    margin-bottom: 0.85rem;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .card strong { color: var(--text); }
+  .card a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  .card a:hover { text-decoration: underline; }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  .pillar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+  .pillar .ico { font-size: 1.6rem; margin-bottom: 8px; display: block; }
+  .pillar h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .pillar p {
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.5;
+  }
+
+  .countries-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.5rem;
+  }
+  .country-chip {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12.5px;
+    color: var(--text2);
+  }
+
+  .disclaimer-box {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.3rem;
+    font-size: 13px;
+    color: #fcd34d;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  .disclaimer-box strong { color: #fff; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--text3); text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--accent2); }
+
+  @media (max-width: 600px) {
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .pillars { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">✦ ScoreBac</div>
+  <h1>À propos de <span>ScoreBac</span></h1>
+  <p>Des outils simples et gratuits pour comprendre vos résultats scolaires</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Notre mission</h2>
+    <p>
+      <strong>ScoreBac</strong> est né d'un constat simple : chaque année, des centaines de milliers d'élèves et de familles cherchent à comprendre comment se calcule leur moyenne d'examen — BEPC, Baccalauréat — sans toujours trouver d'outil clair, gratuit et adapté à leur pays.
+    </p>
+    <p>
+      Notre objectif est de proposer des <strong>calculateurs simples et accessibles</strong>, basés sur les formules et coefficients officiels (ou les plus fiables que nous ayons pu rassembler), pour aider chaque candidat à estimer sa moyenne avant la publication des résultats officiels.
+    </p>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <span class="ico">🆓</span>
+      <h3>Gratuit</h3>
+      <p>Tous nos outils sont accessibles sans inscription ni paiement.</p>
+    </div>
+    <div class="pillar">
+      <span class="ico">⚡</span>
+      <h3>Rapide</h3>
+      <p>Résultat instantané, calculé directement dans votre navigateur.</p>
+    </div>
+    <div class="pillar">
+      <span class="ico">🔍</span>
+      <h3>Transparent</h3>
+      <p>Formules et coefficients affichés clairement, sources indiquées.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Ce que nous proposons</h2>
+    <p>ScoreBac héberge des calculateurs de moyenne adaptés aux systèmes éducatifs de plusieurs pays francophones et arabophones. Nous couvrons actuellement :</p>
+    <div class="countries-row">
+      <span class="country-chip">🇨🇮 Côte d'Ivoire — BEPC</span>
+      <span class="country-chip">🇨🇮 Côte d'Ivoire — BAC</span>
+      <span class="country-chip">🇩🇿 Algérie — BAC</span>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    <strong>Important :</strong> ScoreBac est un site <strong>indépendant</strong>, non affilié à un ministère de l'Éducation, à une direction des examens, ou à tout autre organisme officiel. Nos calculateurs fournissent des <strong>estimations</strong> basées sur les formules et coefficients publiquement disponibles. Le résultat officiel de votre examen reste toujours celui publié par les autorités compétentes de votre pays.
+  </div>
+
+  <div class="card">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+      ScoreBac est géré par une petite équipe indépendante passionnée par l'éducation et les outils numériques utiles. Nous ne sommes pas un organisme officiel, mais des créateurs de sites web qui souhaitent simplifier la vie des élèves et de leurs familles pendant les périodes d'examens.
+    </p>
+    <p>
+      Une question, une suggestion, ou une erreur à signaler sur l'un de nos calculateurs ? Écrivez-nous via notre <a href="/contact">page de contact</a>.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 ScoreBac — Tous droits réservés</p>
+  <p style="margin-top:10px">
+    <a href="/a-propos">À propos</a> ·
+    <a href="/contact">Contact</a> ·
+    <a href="/politique-de-confidentialite">Politique de confidentialité</a> ·
+    <a href="/conditions-utilisation">Conditions d'utilisation</a>
+  </p>
+</footer>
+
+</body>
+</html>

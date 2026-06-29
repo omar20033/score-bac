@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conditions d'utilisation | ScoreBac</title>
+<meta name="description" content="Conditions d'utilisation de ScoreBac : modalités d'usage de nos calculateurs de moyennes scolaires, limites de responsabilité et propriété intellectuelle.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://scorebac.com/conditions-utilisation">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d1a;
+    --bg2: #13132a;
+    --bg3: #1a1a35;
+    --surface: #1e1e3f;
+    --surface2: #252550;
+    --border: rgba(120,120,220,0.18);
+    --border2: rgba(120,120,220,0.32);
+    --text: #f0f0ff;
+    --text2: #a0a0cc;
+    --text3: #6060aa;
+    --accent: #6c63ff;
+    --accent2: #8b83ff;
+    --accent-glow: rgba(108,99,255,0.25);
+    --radius: 12px;
+    --radius-lg: 18px;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(108,99,255,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108,99,255,0.4);
+    color: var(--accent2);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .hero p { font-size: 0.95rem; color: var(--text2); }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 13.5px;
+  }
+  .toc strong { color: var(--text); display: block; margin-bottom: 0.6rem; }
+  .toc a { color: var(--text2); text-decoration: none; display: block; padding: 3px 0; }
+  .toc a:hover { color: var(--accent2); }
+
+  section { margin-bottom: 1.75rem; }
+  section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+  }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+  section p {
+    font-size: 14px;
+    color: var(--text2);
+    margin-bottom: 0.7rem;
+  }
+  section ul {
+    font-size: 14px;
+    color: var(--text2);
+    margin: 0.5rem 0 0.7rem 1.25rem;
+  }
+  section li { margin-bottom: 0.4rem; }
+  section strong { color: var(--text); }
+  section a { color: var(--accent2); text-decoration: none; font-weight: 600; }
+  section a:hover { text-decoration: underline; }
+
+  .warning-box {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.3rem;
+    font-size: 13.5px;
+    color: #fcd34d;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  .warning-box strong { color: #fff; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--text3); text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--accent2); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">✦ ScoreBac</div>
+  <h1>Conditions d'utilisation</h1>
+  <p>Dernière mise à jour : 29 juin 2026</p>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <strong>Sommaire</strong>
+    <a href="#objet">1. Objet</a>
+    <a href="#nature">2. Nature des outils proposés</a>
+    <a href="#responsabilite">3. Limitation de responsabilité</a>
+    <a href="#propriete">4. Propriété intellectuelle</a>
+    <a href="#usage">5. Usage autorisé</a>
+    <a href="#liens">6. Liens vers des sites tiers</a>
+    <a href="#disponibilite">7. Disponibilité du service</a>
+    <a href="#modifications-cgu">8. Modification des conditions</a>
+    <a href="#droit">9. Droit applicable</a>
+    <a href="#contact-cgu">10. Contact</a>
+  </div>
+
+  <div class="warning-box">
+    <strong>À retenir avant tout :</strong> ScoreBac propose des outils d'<strong>estimation</strong>, pas des résultats officiels. Aucune décision d'orientation, d'admission ou d'inscription ne doit être basée uniquement sur nos calculateurs. Référez-vous toujours aux canaux officiels de votre pays (ministère de l'Éducation, direction des examens, etc.).
+  </div>
+
+  <section id="objet">
+    <h2>1. Objet</h2>
+    <p>Les présentes conditions d'utilisation régissent l'accès et l'usage du site ScoreBac (ci-après « le Site »), accessible à l'adresse scorebac.com. En utilisant le Site, vous acceptez sans réserve les présentes conditions.</p>
+  </section>
+
+  <section id="nature">
+    <h2>2. Nature des outils proposés</h2>
+    <p>ScoreBac met à disposition des calculateurs de moyennes scolaires (BEPC, Baccalauréat, et autres examens selon les pays couverts) basés sur des formules et coefficients que nous estimons fiables, recoupés à partir de sources publiques disponibles.</p>
+    <p>Ces outils sont fournis à titre <strong>purement indicatif et informatif</strong>. ScoreBac n'est affilié à aucun ministère de l'Éducation, direction des examens, office national des examens, ou tout autre organisme officiel d'aucun pays.</p>
+  </section>
+
+  <section id="responsabilite">
+    <h2>3. Limitation de responsabilité</h2>
+    <p>ScoreBac ne garantit pas l'exactitude absolue des coefficients, formules ou seuils affichés sur le Site. Ces informations peuvent évoluer d'une année à l'autre ou varier selon les établissements, et nous nous efforçons de les maintenir à jour sans pouvoir le garantir en permanence.</p>
+    <p>ScoreBac ne pourra être tenu responsable :</p>
+    <ul>
+      <li>D'une décision prise sur la base d'une estimation calculée via nos outils ;</li>
+      <li>D'un écart entre l'estimation fournie et le résultat officiel publié par les autorités compétentes ;</li>
+      <li>De toute conséquence directe ou indirecte liée à l'utilisation du Site.</li>
+    </ul>
+    <p>Le résultat officiel d'un examen est exclusivement déterminé par les organismes compétents de chaque pays (DECO, ONEC, ministères de l'Éducation, etc.).</p>
+  </section>
+
+  <section id="propriete">
+    <h2>4. Propriété intellectuelle</h2>
+    <p>Le contenu du Site (textes, design, code, calculateurs) est la propriété de ScoreBac, sauf mention contraire. Toute reproduction, distribution ou exploitation commerciale sans autorisation préalable est interdite.</p>
+  </section>
+
+  <section id="usage">
+    <h2>5. Usage autorisé</h2>
+    <p>Le Site est destiné à un usage personnel et non commercial. Vous vous engagez à ne pas :</p>
+    <ul>
+      <li>Tenter de perturber le fonctionnement technique du Site ;</li>
+      <li>Extraire ou copier massivement le contenu du Site à des fins commerciales ;</li>
+      <li>Utiliser le Site à des fins illégales ou frauduleuses.</li>
+    </ul>
+  </section>
+
+  <section id="liens">
+    <h2>6. Liens vers des sites tiers</h2>
+    <p>Le Site peut contenir des liens vers des sites tiers (portails officiels d'examens, sites gouvernementaux, etc.). ScoreBac n'exerce aucun contrôle sur ces sites et ne saurait être tenu responsable de leur contenu ou de leur disponibilité.</p>
+  </section>
+
+  <section id="disponibilite">
+    <h2>7. Disponibilité du service</h2>
+    <p>Nous nous efforçons d'assurer la disponibilité du Site, sans garantie d'accès continu ou sans interruption. Le Site peut être temporairement indisponible pour des raisons de maintenance ou des causes indépendantes de notre volonté.</p>
+  </section>
+
+  <section id="modifications-cgu">
+    <h2>8. Modification des conditions</h2>
+    <p>ScoreBac se réserve le droit de modifier les présentes conditions d'utilisation à tout moment. Les modifications prennent effet dès leur publication sur cette page.</p>
+  </section>
+
+  <section id="droit">
+    <h2>9. Droit applicable</h2>
+    <p>Les présentes conditions sont régies par les principes généraux du droit applicable en matière de services numériques. En cas de litige, une solution amiable sera recherchée en priorité via notre page de contact.</p>
+  </section>
+
+  <section id="contact-cgu">
+    <h2>10. Contact</h2>
+    <p>Pour toute question relative à ces conditions d'utilisation, contactez-nous à : <a href="mailto:kifeh.contact@gmail.com">kifeh.contact@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 ScoreBac — Tous droits réservés</p>
+  <p style="margin-top:10px">
+    <a href="/a-propos">À propos</a> ·
+    <a href="/contact">Contact</a> ·
+    <a href="/politique-de-confidentialite">Politique de confidentialité</a> ·
+    <a href="/conditions-utilisation">Conditions d'utilisation</a>
+  </p>
+</footer>
+
+</body>
+</html>
