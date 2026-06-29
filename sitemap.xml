@@ -33,5 +33,25 @@
     <loc>https://scorebac.com/algerie/resultat-bac-algerie"/</loc>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://scorebac.com/botswana/calcul-bgcse"/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scorebac.com/contact"/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scorebac.com/a-propos"/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scorebac.com/politique-de-confidentialite"/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scorebac.com/conditions-utilisation"/</loc>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
