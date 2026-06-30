@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Primary SEO -->
-<title>Simulateur Bac 2026 | Calculer Moyenne Bac France | Général, STMG, ST2S, STI2D, Pro</title>
-<meta name="description" content="Simulateur de bac 2026 gratuit : calculez votre moyenne et votre note finale au bac avec le contrôle continu. Bac général, STMG, ST2S, STI2D, bac pro. Mise à jour coefficients 2026.">
-<meta name="keywords" content="simulateur bac, simulateur de bac, calculateur bac, simulation bac, simulateur bac 2026, simulateur bac stmg, simulateur bac st2s, simulateur bac sti2d, simulateur bac pro, simulateur bac general, calcul moyenne bac, quelle moyenne pour avoir le bac, quelle moyenne pour mention très bien au bac, comment calculer sa moyenne au bac, combien de moyenne pour avoir le bac en contrôle continu">
+<title>Simulateur Bac France 2026 | Calculer sa Moyenne au Bac Français | Général, STMG, ST2S, STI2D, Pro</title>
+<meta name="description" content="Simulateur de bac France 2026 gratuit : calculez votre moyenne et votre note finale au bac français avec le contrôle continu. Bac général, STMG, ST2S, STI2D, bac pro. Mise à jour coefficients 2026.">
+<meta name="keywords" content="simulateur bac, simulateur bac france, simulateur de bac, bac français, calculateur bac, simulation bac, simulateur bac 2026, simulateur bac stmg, simulateur bac st2s, simulateur bac sti2d, simulateur bac pro, simulateur bac general, calcul moyenne bac, quelle moyenne pour avoir le bac, quelle moyenne pour mention très bien au bac, comment calculer sa moyenne au bac, combien de moyenne pour avoir le bac en contrôle continu">
 <meta name="author" content="Simulateur Bac France">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://scorebac.com/france/simulateur-bac/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Simulateur Bac 2026 — Calculer sa Moyenne au Bac">
-<meta property="og:description" content="Simulez votre note finale au bac 2026 : contrôle continu, épreuves finales, spécialités, grand oral. Toutes les filières.">
+<meta property="og:title" content="Simulateur Bac France 2026 — Calculer sa Moyenne au Bac Français">
+<meta property="og:description" content="Simulez votre note finale au bac français 2026 : contrôle continu, épreuves finales, spécialités, grand oral. Toutes les filières.">
 <meta property="og:locale" content="fr_FR">
 
 <script type="application/ld+json">
@@ -183,9 +183,9 @@
 
 <div class="hero">
   <div class="hero-badge">✦ Bac France 2026</div>
-  <h1>Simulateur <span>Bac</span> 2026</h1>
-  <p>Calculez votre moyenne et votre note finale au bac : contrôle continu, épreuves finales, spécialités, grand oral.</p>
-  <p style="margin-top:0.5rem;font-size:0.9rem;color:var(--text3)">Bac général · STMG · ST2S · STI2D · Bac pro · Coefficients indicatifs 2026</p>
+  <h1>Simulateur <span>Bac France</span> 2026</h1>
+  <p>Calculez votre moyenne et votre note finale au bac français : contrôle continu, épreuves finales, spécialités, grand oral.</p>
+  <p style="margin-top:0.5rem;font-size:0.9rem;color:var(--text3)">Bac général · STMG · ST2S · STI2D · Bac pro · Éducation nationale · Coefficients indicatifs 2026</p>
 </div>
 
 <div class="container">
@@ -205,7 +205,6 @@
   <div class="mention-wrap" id="mentionWrap"></div>
   <div class="progress-section" id="progressSection"></div>
   <div class="formula-box" id="formulaBox"></div>
-  <div class="disclaimer" id="disclaimerBox"></div>
 
   
   <section class="faq-section" aria-label="Questions fréquentes sur le simulateur de bac">
@@ -214,9 +213,9 @@
     <details class="faq-item">
       <summary class="faq-q">Comment calculer sa moyenne au bac ?</summary>
       <div class="faq-a">
-        La note finale du bac s'obtient en additionnant le <strong>contrôle continu</strong> (moyenne des bulletins de 1ère et terminale, pondérée selon la matière) et les <strong>épreuves finales</strong> (spécialités, philosophie, grand oral, français écrit et oral), chaque élément étant pondéré par son coefficient officiel :<br><br>
+        La note finale du bac <strong>français</strong> s'obtient en additionnant le <strong>contrôle continu</strong> (moyenne des bulletins de 1ère et terminale, pondérée selon la matière) et les <strong>épreuves finales</strong> (spécialités, philosophie, grand oral, français écrit et oral), chaque élément étant pondéré par son coefficient officiel :<br><br>
         <code>Note finale = Σ(note × coef) ÷ Σcoef</code><br><br>
-        Pour le bac général, le contrôle continu représente 40% de la note finale, les épreuves terminales 60% (spécialités 32%, philosophie 8%, grand oral 10%, français 10%).
+        Pour le bac général en France, le contrôle continu représente 40% de la note finale, les épreuves terminales 60% (spécialités 32%, philosophie 8%, grand oral 10%, français 10%).
       </div>
     </details>
 
@@ -264,7 +263,7 @@
     <a href="#" onclick="setSection('sti2d');return false;">Simulateur bac STI2D</a> ·
     <a href="#" onclick="setSection('pro');return false;">Simulateur bac pro</a>
     <br>
-    simulateur de bac · calculateur bac · simulation bac · calcul moyenne bac · simulateur bac 2026 · l'étudiant simulateur bac
+    simulateur de bac · simulateur bac france · calculateur bac · simulation bac · calcul moyenne bac · simulateur bac 2026 · bac français · l'étudiant simulateur bac
   </div>
 
 </div>
@@ -511,7 +510,6 @@ function renderResults(moyenne, noteFinale, bars, filled, total) {
   const mw = document.getElementById('mentionWrap');
   const ps = document.getElementById('progressSection');
   const fb = document.getElementById('formulaBox');
-  const db = document.getElementById('disclaimerBox');
 
   const moyStr = moyenne !== null ? moyenne.toFixed(2) : '—';
   const allFilled = filled === total;
@@ -560,7 +558,6 @@ function renderResults(moyenne, noteFinale, bars, filled, total) {
     <strong>Admission :</strong> ≥ 10/20 admis directement · entre 8 et 10 oral de rattrapage possible · &lt; 8 ajourné.
   `;
 
-  db.innerHTML = `Coefficients indicatifs pour la session 2026, simplifiés à titre informatif. Ils peuvent varier selon votre série, votre spécialité et votre académie : vérifiez toujours vos coefficients exacts sur <strong>education.gouv.fr</strong> ou auprès de votre établissement.`;
 }
 
 // INIT
