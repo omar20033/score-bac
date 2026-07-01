@@ -1,0 +1,49 @@
+# Scorebac
+
+> Scorebac provides exam calculators, grade calculators, result guides, and educational resources for students in multiple countries.
+
+Website: https://scorebac.com
+Language: French, Arabic, English, Turkish
+
+## Main
+
+- Home: https://scorebac.com/
+- Contact: https://scorebac.com/contact/
+- About: https://scorebac.com/a-propos/
+
+## Calculators
+
+- Algeria - Bac Average Calculator: https://scorebac.com/algerie/calculer-moyenne-bac/
+- Morocco - Bac Average Calculator: https://scorebac.com/maroc/calculer-moyenne-bac/
+- Côte d'Ivoire - BEPC Calculator: https://scorebac.com/coteivoire/calculer-moyenne-bepc/
+- France - Bac Simulator: https://scorebac.com/france/simulateur-bac/
+- Turkey - YÖS Score Calculator: https://scorebac.com/turkey/yös-puan-hesaplama/
+
+## Tunisia
+
+- Orientation Guide: https://scorebac.com/tunisie/guide-orientation/
+- Bac Science Calculator: https://scorebac.com/calculer-moyenne-bac-science/
+- Bac Math Calculator: https://scorebac.com/calculer-moyenne-bac-math/
+- Bac Info Calculator: https://scorebac.com/calculer-moyenne-bac-info/
+- Bac Eco Gestion Calculator: https://scorebac.com/calculer-moyenne-bac-eco-gestion/
+- Bac Lettres Calculator: https://scorebac.com/calculer-moyenne-bac-lettres/
+- Bac Technique Calculator: https://scorebac.com/calculer-moyenne-bac-technique/
+- Bac Sport Calculator: https://scorebac.com/calculer-moyenne-bac-sport/
+
+## Results & Guides
+
+- Algeria Bac Results Guide: https://scorebac.com/algerie/resultat-bac-algerie/
+- Cameroon GCE Results: https://scorebac.com/cameron/gce-results/
+- Kenya KPSEA Results: https://scorebac.com/kenya/kpsea-results/
+- Kenya KCSE Results: https://scorebac.com/kenya/kcse-results/
+- Algeria Minimum Admission Averages: https://scorebac.com/algerie/moyennes-minimales-bac/
+- Botswana BGCSE Calculator: https://scorebac.com/botswana/calcul-bgcse/
+
+## Policies
+
+- Privacy Policy: https://scorebac.com/politique-de-confidentialite/
+- Terms of Use: https://scorebac.com/conditions-utilisation/
+
+## Description
+
+Scorebac publishes educational tools that help students calculate examination averages, estimate final scores, understand grading systems, check examination result information, and access university admission resources across several countries.
