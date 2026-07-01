@@ -539,6 +539,62 @@
   }
   .disclaimer-note strong { color: var(--amber); }
 
+  /* INTRO CONTENT */
+  .intro-section {
+    margin-bottom: 2.5rem;
+  }
+  .intro-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .intro-section h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--accent2);
+    margin: 1.5rem 0 0.6rem;
+  }
+  .intro-section p {
+    font-size: 14.5px;
+    color: var(--text2);
+    line-height: 1.8;
+    margin-bottom: 0.9rem;
+  }
+  .intro-section strong { color: var(--text); }
+  .intro-section ul {
+    margin: 0.5rem 0 1rem 1.3rem;
+    color: var(--text2);
+    font-size: 14.5px;
+    line-height: 1.9;
+  }
+  .exam-dates-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.4rem;
+    margin: 1rem 0 1.2rem;
+  }
+  .exam-dates-box .date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  .exam-dates-box .date-row:last-child { border-bottom: none; }
+  .exam-dates-box .date-row span:first-child { color: var(--text2); }
+  .exam-dates-box .date-row span:last-child { color: var(--text); font-weight: 600; font-family: 'Space Grotesk', sans-serif; }
+  .exam-dates-source {
+    font-size: 11.5px;
+    color: var(--text3);
+    margin-top: 0.6rem;
+  }
+  .exam-dates-source a { color: var(--text3); }
+
   @media (max-width: 600px) {
     .hero { padding: 2.5rem 1.25rem 2rem; }
     .results-grid { grid-template-columns: 1fr 1fr; }
@@ -627,6 +683,59 @@
   <div class="mention-wrap" id="mentionWrap"></div>
   <div class="progress-section" id="progressSection"></div>
   <div class="formula-box" id="formulaBox"></div>
+
+  <!-- INTRO / EDUCATIONAL CONTENT -->
+  <section class="intro-section" aria-label="YÖS hakkında bilgiler">
+    <h2>YÖS Nedir?</h2>
+    <p>
+      <strong>TR-YÖS (Türkiye Yurt Dışından Öğrenci Kabul Sınavı)</strong>, ÖSYM tarafından
+      yılda iki kez düzenlenen ve <strong>yabancı uyruklu öğrencilerin</strong> Türkiye'deki
+      devlet üniversitelerine yerleşebilmesi için girdiği merkezi bir sınavdır. Sınava; lise
+      son sınıfta okuyan veya lise mezunu olan yabancı uyruklu adaylar, Mavi Kart sahipleri ve
+      belirli koşulları sağlayan çifte vatandaşlık sahipleri başvurabilir.
+    </p>
+    <p>
+      TR-YÖS'ün en önemli avantajı, üniversitelerin kendi ayrı sınavlarını yapması yerine
+      <strong> tek bir merkezi sınavla</strong> Türkiye'deki 100'den fazla devlet üniversitesine
+      başvuru yapabilmenizdir. Bazı vakıf üniversiteleri de kendi YÖS sınavlarını ayrıca
+      düzenleyebilir; bu sayfadaki hesaplama TR-YÖS'ün resmi puanlama mantığına dayanır.
+    </p>
+
+    <h3>YÖS Sınav Formatı</h3>
+    <p>
+      TR-YÖS toplam <strong>80 soru</strong>dan oluşur ve <strong>100 dakika</strong> sürer:
+    </p>
+    <ul>
+      <li><strong>Sayısal Yetenek Testi</strong> — 40 soru, ağırlık katsayısı 0,45. Mantık ilişkileri, örüntü tanıma ve görsel-sayısal akıl yürütme becerilerini ölçer.</li>
+      <li><strong>Temel Matematik Testi</strong> — 40 soru, ağırlık katsayısı 0,55. Lise düzeyinde temel matematik konularını kapsar.</li>
+    </ul>
+    <p>
+      Sınav Türkçe, İngilizce, Arapça, Almanca, Fransızca ve Rusça olmak üzere <strong>6 farklı
+      dilde</strong> uygulanır; adaylar başvuru sırasında sınav dilini seçer. Yanlış cevaplar
+      doğru cevapları etkiler: her <strong>4 yanlış cevap 1 doğru cevabı götürür</strong>
+      (Net = Doğru − Yanlış ÷ 4).
+    </p>
+
+    <h3>2026 YÖS Sınav Tarihleri</h3>
+    <p>
+      ÖSYM'nin resmi 2026 takvimine göre TR-YÖS iki dönemde uygulanmaktadır:
+    </p>
+    <div class="exam-dates-box">
+      <div class="date-row"><span>TR-YÖS/1 — Başvuru</span><span>14 Ocak – 3 Şubat 2026</span></div>
+      <div class="date-row"><span>TR-YÖS/1 — Sınav Tarihi</span><span>12 Nisan 2026</span></div>
+      <div class="date-row"><span>TR-YÖS/2 — Başvuru</span><span>9 Temmuz – 3 Ağustos 2026</span></div>
+      <div class="date-row"><span>TR-YÖS/2 — Sınav Tarihi</span><span>11 Ekim 2026</span></div>
+    </div>
+    <p class="exam-dates-source">
+      Kaynak: ÖSYM resmi duyuruları. Tarihler değişebileceğinden başvuru öncesi
+      <a href="https://www.osym.gov.tr/TR,21484/tr-yos.html" target="_blank" rel="noopener">ÖSYM'nin TR-YÖS sayfasını</a>
+      kontrol etmenizi öneririz.
+    </p>
+    <p>
+      TR-YÖS puanı, sınav tarihinden itibaren <strong>2 yıl</strong> geçerlidir; bu süre
+      içinde aynı puanla farklı üniversitelere başvuru yapabilirsiniz.
+    </p>
+  </section>
 
   <!-- CTA TO UNIVERSITY GUIDE -->
   <div class="cta-box">
